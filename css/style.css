@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+html, body * {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(209, 238, 220);
+    text-align: center;
+}
+
+h1 {
+    font-family: "annuario-variable", sans-serif;
+    font-size: 40px;
+    position: absolute;
+    left: 33%;
+    top: 3rem;
+}
+
+
+.container {
+    width: 80%;
+    margin: 15rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(9, 65, 46);
+    position: absolute;
+}
+
+.ball1 {
+    left: 30%;
+    animation-name: move1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes move1 {
+
+    0% {
+        top: -45px;
+
+    }
+
+    50% {
+        top: 100px;
+        background-color: rgb(106, 206, 173);
+        transform: scale(0.8);
+    }
+
+    100% {
+        top: -45px;
+    }
+}
+
+
+.ball2 {
+    left: 40%;
+    animation-name: move2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes move2 {
+
+    0% {
+        top: -45px;
+    }
+
+    50% {
+        top: 100px;
+        background-color:rgb(106, 198, 206);
+        transform: scale(0.8);
+    }
+
+    100% {
+        top: -45px;
+    }
+}
+
+
+.ball3 {
+    left: 50%;
+    animation-name: move3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes move3 {
+
+    0% {
+        top: -45px;
+    }
+
+    50% {
+        top: 100px;
+        background-color:rgb(106, 166, 206);
+        transform: scale(0.8);
+    }
+
+    100% {
+        top: -45px;
+    }
+}
+
+.ball4 {
+    left: 60%;
+    animation-name: move4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes move4 {
+
+    0% {
+        top: -45px;
+    }
+
+    50% {
+        top: 100px;
+        background-color:rgb(106, 121, 206);
+        transform: scale(0.8);
+    }
+
+    100% {
+        top: -45px;
+    }
+}
+
+
+.ball5 {
+    width: 100px;
+    height: 100px;
+    background-color:  rgb(9, 65, 46);
+    border-radius: 20px;
+    position: absolute;
+    left: 30%;
+    animation-name: move5;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move5 {
+    
+    0% {
+        left: 30%;
+    }
+
+    20% {
+        left: 30%;
+        height: 90px;
+        background-color: rgb(106, 206, 173);
+    }
+
+    40% {
+        left: 40%;
+        height: 80px;
+        background-color:rgb(106, 198, 206);
+    }
+
+    60% {
+        left: 50%;
+        height: 70px;
+        background-color:rgb(106, 166, 206);
+    }
+
+    80% {
+        left: 60%;
+        height: 60px;
+        background-color:rgb(106, 121, 206);
+    }
+}
+
+.container_square {
+    gap: 150px;
+}
+
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.square1 {
+    left: 20%;
+    background-color: rgb(106, 206, 173);
+    animation: square1 2s 2s forwards, return1 2s 17s forwards; 
+}
+
+/* Animations start from this line */
+
+
+@keyframes square1 {
+    
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: 32%;
+        background-color:rgb(106, 198, 206);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes return1 {
+
+    0% {
+        left: 32%;
+        transform: scale(0.9);
+        background-color:rgb(106, 198, 206);
+
+    }
+
+    100% {
+        left: 20%;
+        transform: scale(1.0);
+        background-color: rgb(106, 206, 173);
+
+    }
+}
+
+.square2 {
+    left: 40%;
+    animation: square2 2s 4s forwards, return2 2s 15s forwards;
+    background-color:rgb(106, 198, 206);
+}
+
+@keyframes square2 {
+    
+    0% {
+        left: 40%;
+
+    }
+
+    100% {
+        left: 52%;
+        background-color:rgb(106, 166, 206);
+        transform: scale(0.9);
+
+    }
+}
+
+@keyframes return2 {
+
+    0% {
+        left: 52%;
+        transform: scale(0.9);
+        background-color:rgb(106, 166, 206);
+
+    }
+
+    100% {
+        left: 40%;
+        transform: scale(1.0);
+        background-color:rgb(106, 198, 206);
+
+    }
+}
+
+.square3 {
+    left:60%;
+    background-color:rgb(106, 166, 206);
+    animation: square3 2s 6s forwards, return3 2s 13s forwards;
+}
+
+@keyframes square3 {
+    
+    0% {
+        left: 60%;
+
+    }
+
+    100% {
+        left: 72%;
+        background-color:rgb(106, 121, 206);
+        transform: scale(0.9);
+
+    }
+}
+
+@keyframes return3 {
+
+    0% {
+        left: 72%;
+        transform: scale(0.9);
+        background-color:rgb(106, 121, 206);
+
+    }
+
+    100% {
+        left: 60%;
+        transform: scale(1.0);
+        background-color:rgb(106, 166, 206);
+
+    }
+}
+
+.square4 {
+    left: 80%;
+    background-color:rgb(106, 121, 206);
+    animation: square4 2s 8s forwards, return4 2s 11s forwards;
+}
+
+@keyframes square4 {
+    
+    0% {
+        left: 80%;
+
+    }
+
+    100% {
+        left: 92%;
+        transform: scale(0.9);
+        background-color:rgb(106, 198, 206);
+
+    }
+}
+
+@keyframes return4 {
+
+    0% {
+        left: 92%;
+        transform: scale(0.9);
+        background-color:rgb(106, 198, 206);
+
+    }
+
+    100% {
+        left: 80%;
+        transform: scale(1.0);
+        background-color:rgb(106, 121, 206);
+
+    }
+}
+
+
